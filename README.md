@@ -169,3 +169,5 @@ Using Ghost-Vision in research? See [CITATION.cff](CITATION.cff), or use **"Cite
 ## License
 
 © 2026 M. Kalantary. Apache License 2.0 — see [LICENSE](LICENSE) and [NOTICE](NOTICE). Free to use, change and share, including commercially, as long as the copyright notices are kept.
+
+**One thing to know before building a product on it:** the console's window toolkit, [PyQt5](https://riverbankcomputing.com/software/pyqt/), has its own licence: GPL v3, or a paid commercial licence. Using Ghost-Vision, or sharing it as open source, is fine. If you distribute a **closed-source** product that includes the console, you'll need a commercial PyQt licence or a switch to another toolkit. The firmware isn't affected.

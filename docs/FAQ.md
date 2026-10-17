@@ -41,5 +41,7 @@ It uses WPA2, so outsiders can't join it without the password. Inside the networ
 ### Can I use it in a product or for a client?
 The licence (Apache 2.0) allows it, including commercially. Please read [responsible-use.md](responsible-use.md) first, and keep the copyright notices.
 
+One catch: the console uses PyQt5 for its window, and PyQt5 is licensed under GPL v3 or a paid commercial licence. Running it for a client, or sharing your changes as open source, is fine. Selling or handing out a **closed-source** product that includes the console needs a commercial PyQt licence, or a switch to another toolkit. The firmware isn't affected. This is a summary, not legal advice. See the [README](../README.md#license).
+
 ### I found a bug or have an idea. What do I do?
 Thank you! Open an issue on GitHub — there are forms for bugs, questions, ideas and sharing results. If you'd like to fix it yourself, see [CONTRIBUTING.md](../CONTRIBUTING.md).
