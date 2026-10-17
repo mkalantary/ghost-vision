@@ -23,7 +23,7 @@ For each of the 16 directed paths, the console runs a separate engine:
 1. **Normalise each packet by its own mean.** The radio's automatic gain control occasionally jumps; without this step, a gain jump looks exactly like motion.
 2. **Measure variance over a short window.** A still room gives a flat, low line. Movement makes it rise.
 3. **Compare against that path's own threshold**, measured during calibration in an empty room. Paths differ enormously — in one quiet room, the natural wobble ranged from 2.2 to 11.5 across the 16 paths, a 5× spread caused by geometry alone. A single shared threshold cannot work.
-4. **Require corroboration.** At least two paths must agree before the system reports motion. A real body blocks several crossing paths at once; a single path firing on its own is the signature of a glitch.
+4. **Require persistence, and corroboration where it's needed.** Every path must be disturbed repeatedly, in quick succession, before it counts. On top of that, the 12 board-to-board paths — the most sensitive and the noisiest — only report motion when at least two paths agree. A real body blocks several crossing paths at once; a single sensitive path firing on its own is the signature of a glitch. The 4 router paths can each report motion alone, as they did before the board-to-board paths existed.
 
 Two protective gates sit in front of the decision. If a window took much longer than normal to fill (because packets slowed down), or if a path's packet rate collapsed, that window is not scored. Both were added after they were found to be the root cause of phantom alarms.
 
@@ -32,6 +32,8 @@ Two protective gates sit in front of the decision. If a window took much longer 
 One path is one line. Someone who doesn't cross it isn't seen.
 
 Four nodes in a room give 4 links to the router plus 6 links between nodes — 10 physical paths that cross each other. Each node-to-node pair is measured from both ends, giving 16 directed measurements. In simulation, the 4 router paths alone left 22 of 80 test points more than 0.75 m from any path; all 16 paths left none.
+
+Four is a recommendation, not a minimum. One board and the router form a single path: it detects movement that crosses that line, but it can't place it, because anywhere along one line fits equally well. Two boards give 3 paths and a rough zone; three give 6. The paths grow faster than the boards — that's why the fourth board is worth adding.
 
 ## Zone estimation
 

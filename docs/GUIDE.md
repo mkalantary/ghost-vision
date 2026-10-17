@@ -224,6 +224,8 @@ Turn each MAC you wrote down into this format: put `0x` in front of each pair an
 
 Fill in N1–N4 in **both** tables (search for `GV_KNOWN` and `GV_NODE_MAC`). The two tables must match.
 
+> **Using fewer than four boards?** Fill in the boards you have, numbered from N1 upwards, and leave the other placeholders as they are. Four is recommended for coverage, but not required — see [the README](../README.md#do-you-need-four-boards).
+
 ### 6.2 — Give each board its number
 
 In the same file, search for this line:

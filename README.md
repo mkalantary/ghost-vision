@@ -74,18 +74,33 @@ flowchart LR
     R == "Ethernet cable" ==> PC
 ```
 
-The boards listen to the router **and to each other**. Four boards and a router make **10 radio paths** that criss-cross the room. Each pair of boards is measured from both ends, giving **16 measurements**, about 50 times a second each. When a body moves, several crossing paths change at once — and the console only reports motion when **at least two paths agree**, so one glitchy path can't raise a false alarm.
+The boards listen to the router **and to each other**. Four boards and a router make **10 radio paths** that criss-cross the room. Each pair of boards is measured from both ends, giving **16 measurements**, about 50 times a second each. When a body moves, several crossing paths change at once.
+
+False alarms are kept down in two ways. A path must be disturbed repeatedly, in quick succession, before it counts, and readings taken while the data stream slows down are discarded. The 12 board-to-board paths are the most sensitive and the noisiest, so they only report motion when **at least two paths agree**.
 
 ---
 
 ## What you need to build one
 
-- **4 × ESP32-S3** development boards — a few dollars each
+- **4 × ESP32-S3** development boards — a few dollars each (one is enough to start; see below)
 - **1 × spare WiFi router** you can configure
 - USB **data** cables, USB wall chargers and one Ethernet cable
 - A PC (developed and tested on Windows)
 
 Roughly **$60–100** in parts, excluding the PC. Full list and every step: **[the guide](docs/GUIDE.md)**.
+
+### Do you need four boards?
+
+No. Four is the recommended setup, chosen for coverage and accuracy, not a minimum. Every board you add creates new paths, and more crossing paths mean fewer blind spots and a better zone estimate:
+
+| Boards | Radio paths | What you get |
+|---|---|---|
+| 1 | 1 | Motion along a single line between the board and the router. No zone — one line can't tell *where* along it the movement is. |
+| 2 | 3 | Wider coverage, and a rough zone when both router paths are disturbed. |
+| 3 | 6 | Most of a typical room. |
+| **4** | **10** | **Full-room coverage, board-to-board corroboration and the best zone estimate. This is the setup the project was built and tested with.** |
+
+The console works with any number from one to four; boards that aren't there simply show *NO SIGNAL*. That was checked in simulation. On real hardware, the current version has been run with four boards.
 
 ---
 

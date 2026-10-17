@@ -24,7 +24,7 @@ The zone on the map is approximate: roughly metre-scale, shown with an uncertain
 AI can help with some things, like telling a person's walking rhythm apart from a fan. But it can't create information that isn't in the signal. A model trained in one room also tends to give confident answers in other rooms where it has no real evidence. See [lessons-learned.md](lessons-learned.md).
 
 ### Do I need four boards?
-Four is what the project is built and tested with — the console expects four, and the room coverage and the two-path agreement rule both come from having four. Running with fewer is untested.
+No — four is the recommended setup, not a minimum. Each board adds radio paths, and more crossing paths mean fewer blind spots and a better zone estimate. One board detects motion along a single line but can't show where; two give a rough zone; four give full-room coverage. The console handles any number from one to four (checked in simulation). The current version has been run on real hardware with four boards. With fewer, fill in only the MAC addresses you have in Part 6 of the guide and leave the other placeholders as they are. See the table in the [README](../README.md#do-you-need-four-boards).
 
 ### Can I use my home WiFi router?
 It's much better to use a spare router. The router needs settings — a fixed channel, 20 MHz width, no hourly key change — that you might not want on your home network, and keeping the sensing network separate keeps it private and isolated.

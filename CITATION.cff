@@ -13,8 +13,8 @@ abstract: >-
   An open-source system that detects human motion and presence from WiFi
   Channel State Information (CSI), using four ESP32-S3 boards and one router
   to form 10 radio paths (16 directed measurements). It includes node
-  firmware, a desktop console with calibration, multi-path corroborated
-  detection and approximate zone estimation, a simulation mode, and
+  firmware, a desktop console with calibration, persistence-checked and
+  multi-path corroborated detection and approximate zone estimation, a simulation mode, and
   documentation of the system's physical limits and failed hypotheses.
 keywords:
   - WiFi sensing

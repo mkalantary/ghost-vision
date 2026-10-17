@@ -10,7 +10,7 @@ Every technical word used in this project, in plain language.
 | **Channel** | Which exact frequency inside the 2.4 GHz band the router uses. It must stay fixed, or the baseline is lost. |
 | **COM port** | The name Windows gives a board plugged in by USB, like `COM5`. |
 | **Console** | The program on your PC that shows everything: `ghost_vision_ops.py`. |
-| **Corroboration** | Requiring at least two paths to agree before reporting motion, so one glitchy path can't cause a false alarm. |
+| **Corroboration** | Requiring at least two paths to agree before they report motion. Ghost-Vision applies it to the 12 sensitive board-to-board paths, so one glitchy path among them can't cause a false alarm. |
 | **CSI — Channel State Information** | A detailed measurement of how a WiFi signal arrived: how strong it was and how it shifted, at 64 slightly different frequencies. A moving body changes it. This is what the boards measure. |
 | **DHCP** | The router feature that hands out addresses to devices automatically. The boards get their addresses this way. |
 | **ESP32-S3** | The small, inexpensive computer chip on each sensor board, made by Espressif. It has WiFi built in. |

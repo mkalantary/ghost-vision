@@ -11,7 +11,7 @@ The first version published on GitHub.
 - Every board listens to the router and to the other three boards
 - Per-path frame fingerprinting and per-path rate limiting in the firmware
 - Wireless streaming to the console, with automatic discovery of the console's address
-- Motion detection that requires at least two paths to agree
+- Motion detection with per-path persistence checks; board-to-board paths must agree in pairs before they report motion
 - Experimental presence detection and approximate zone estimation with an uncertainty ring
 - Room planner with a placement score, calibration that refuses a non-empty room, recording, and install reports
 - Simulation mode for trying everything without hardware
