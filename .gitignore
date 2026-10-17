@@ -19,7 +19,11 @@ venv/
 .DS_Store
 Thumbs.db
 
-# --- Local runtime output (recordings, logs) ---
+# --- Local runtime output (recordings, logs, personal settings) ---
 console/recordings/
 *.log
 ghostvision_*.csv
+ghostvision_report_*.txt
+ghostvision_snap_*.png
+console/ghost_vision_settings.json
+console/ghost_vision_room.json
