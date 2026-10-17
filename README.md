@@ -1,3 +1,5 @@
+**English** · [فارسی](README.fa.md)
+
 # Ghost-Vision
 
 **Detects people moving in a room using only WiFi — no cameras.**
