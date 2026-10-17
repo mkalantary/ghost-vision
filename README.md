@@ -86,6 +86,17 @@ Roughly **$60–100** in parts, excluding the PC. Full list and every step: **[t
 
 ---
 
+## The real hardware
+
+![Four ESP32-S3 boards on a desk streaming live data to an early version of the console](docs/images/live-bench-test.jpg)
+<sub>An early bench test of console v3 with live data from four real boards, before calibration. The boards are on a desk, not in the room's corners, so this shows the whole chain working end to end. It doesn't show detection performance.</sub>
+
+| A sensor board on its stand | The router, mounted in the room |
+|---|---|
+| ![ESP32-S3 sensor board mounted on a light stand](docs/images/node-on-stand.jpg) | ![WiFi router mounted on a pole](docs/images/router-on-pole.jpg) |
+
+---
+
 ## More screens
 
 | Room planner | Start-up |

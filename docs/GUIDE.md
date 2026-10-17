@@ -85,6 +85,9 @@ Open the router's settings page in a browser (the address and password are usual
 
 > **Want to keep a different address range?** It works, but you'll change two extra settings later — see [Using a different address range](TROUBLESHOOTING.md#using-a-different-address-range). Copying the table above is much easier.
 
+<img src="images/router-on-pole.jpg" alt="WiFi router mounted on a pole inside the test room" width="360"><br>
+<sub>The test setup's router, mounted on a pole inside the room it senses.</sub>
+
 ✅ **Check:** after saving, the router restarts and your phone can see the new network name in its WiFi list. (Don't connect your phone or PC to it over WiFi — only the boards join by WiFi.)
 
 ---
@@ -229,6 +232,9 @@ In the same file, search for this line:
 #define GV_NODE_ID                 4
 ```
 
+![Four ESP32-S3 boards plugged into one USB hub](images/flashing-four-boards.jpg)
+<sub>A USB hub lets all four boards stay plugged in at once. Each socket gets its own COM number, so check which board is on which port.</sub>
+
 Now, **for each board in turn**:
 
 1. Change the number to that board's label: `1` for N1, `2` for N2, and so on.
@@ -255,6 +261,9 @@ Now, **for each board in turn**:
    ```
 
    (The `.venv` folder was created the first time you ran a launcher in Part 0.)
+
+   <img src="images/node-on-stand.jpg" alt="A sensor board clipped to a light stand" width="360"><br>
+   <sub>One sensor board on a light stand. A phone clamp holds it. This one runs from a powerbank for a short test; for anything longer, use a wall charger (see Part 1).</sub>
 
 3. **Windows Firewall** may pop up asking whether to allow Python. Tick **Private networks** and click **Allow**. If you missed the pop-up, see [TROUBLESHOOTING.md](TROUBLESHOOTING.md#no-data-arrives-at-the-pc).
 

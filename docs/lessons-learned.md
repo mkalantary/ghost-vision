@@ -38,3 +38,10 @@ Mistakes made while building this, written down so nobody has to make them twice
 - **Boards huddled on a table measure the air between three objects, not the room.** Put them back on their mapped positions before any test.
 - **Recalibrate after any change to the data path.** Three calibrations were once done against inflated readings.
 - **Three console builds in a row made things worse** because there was no way to tell an improvement from a plausible-sounding change. A measurement rig — tape marks, a fixed walk route, logged ground truth — is the precondition for every further change.
+
+## Where it started
+
+![Espressif's stock CSI example plotting raw data from one board](images/day-one-stock-example.jpg)
+<sub>Day one: one board running Espressif's stock esp-csi example, plotting raw CSI. Everything in this repository grew from here.</sub>
+
+The desk test in the README's main photo is also the mistake described above: boards huddled together measure the air between them, not the room. It proves the data chain works, and nothing more.
