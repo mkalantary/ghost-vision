@@ -6,7 +6,7 @@
 
 [![License: Apache 2.0](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
 ![Hardware: ESP32-S3](https://img.shields.io/badge/hardware-ESP32--S3-teal.svg)
-![Status: bench-tested](https://img.shields.io/badge/status-bench--tested-orange.svg)
+![Status: working prototype](https://img.shields.io/badge/status-working%20prototype-orange.svg)
 
 ![Ghost-Vision console detecting a person in simulation mode](docs/images/console.png)
 <sub>The console in simulation mode: a virtual person walks the room, the WiFi paths they disturb turn red, and their approximate zone is drawn with an uncertainty ring. Simulated data — not a field measurement.</sub>
@@ -38,9 +38,10 @@ No camera. No picture. Nothing that identifies who you are. It even works in the
 
 ## Status
 
-> **Bench-tested; field measurements still to come.**
-> The radio link, firmware and console are complete and measured — see [Measured results](#measured-results).
-> **How often it detects a person, and how often it raises a false alarm, haven't been measured in a real room yet.** The test room is unavailable from October 2026 for at least a month. Those two numbers will be published here when they're measured — not estimated.
+> **Working prototype — tested in a real room, not yet formally measured.**
+> Ghost-Vision has been installed in a real office room and used with people walking through it, and it detected their movement. That real-world use is also what exposed its weak spots — occasional false alarms, and a fault that blinded one board at a time — which were traced and fixed. They're written up in [lessons learned](docs/lessons-learned.md).
+> What those tests didn't produce is numbers. Nobody counted hits and misses against a fixed walking route, so there's **no detection rate or false-alarm rate to quote yet**. The radio link, firmware and console *have* been measured — see [Measured results](#measured-results).
+> The formal test — 50 scripted walks, then 24 hours in the empty room — needs the test room, which is unavailable from October 2026 for at least a month. The numbers will be published here when they're measured, not estimated.
 >
 > Want to help? [Measure your own setup](docs/measuring-your-setup.md) and share the results.
 

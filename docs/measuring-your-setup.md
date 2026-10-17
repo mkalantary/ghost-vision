@@ -2,7 +2,7 @@
 
 "It works pretty well" is a feeling. "It detected 47 of 50 walk-throughs, with one false alarm in 24 hours" is a fact someone else can check. This page shows you how to get those two numbers for your own room — no special equipment, just a tape measure, a notebook and some patience.
 
-Ghost-Vision's own field numbers haven't been measured yet. **If you measure yours and share them, you help everyone** — there's an issue form called **Share your results** for exactly this.
+Ghost-Vision has been tested in a real room, but only informally — its detection numbers haven't been formally measured yet. **If you measure yours and share them, you help everyone** — there's an issue form called **Share your results** for exactly this.
 
 ---
 

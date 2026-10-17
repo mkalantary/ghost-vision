@@ -4,7 +4,7 @@ Thank you for wanting to help! You don't need to be an expert. Some of the most 
 
 ## Ways to help — no coding needed
 
-- **Measure your own setup.** Ghost-Vision's field detection rate hasn't been measured yet. Follow [measuring-your-setup.md](docs/measuring-your-setup.md) and share your numbers using the **Share your results** issue form. Results from rooms where it works badly are just as useful.
+- **Measure your own setup.** Ghost-Vision works in informal real-room tests, but its detection rate hasn't been formally measured yet. Follow [measuring-your-setup.md](docs/measuring-your-setup.md) and share your numbers using the **Share your results** issue form. Results from rooms where it works badly are just as useful.
 - **Try it on something new** — macOS, Linux with real boards, a different router, a different ESP32-S3 board — and tell us what happened.
 - **Improve the docs.** If a step in the [guide](docs/GUIDE.md) confused you, it will confuse others. Tell us where, or suggest better wording.
 - **Translate the guide.** The README already has a [Persian version](README.fa.md); a Persian (فارسی) guide would be especially welcome. Translations need a native speaker who can check every technical step.

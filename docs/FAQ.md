@@ -16,7 +16,7 @@ Not in the way films show. It doesn't produce any image. A body moving between t
 No, and this isn't something more code or AI could fix — the information isn't in the signal. The console reports whether activity is in one place, several separate places, or widespread. To count people, count them through a doorway with a separate sensor. [limitations.md](limitations.md) explains why.
 
 ### How accurate is it?
-Motion detection works and has been tested on the bench. **Detection rate and false-alarm rate have not been measured in a field test yet** — this is stated openly at the top of the README. You can measure your own setup with [measuring-your-setup.md](measuring-your-setup.md), and sharing your numbers helps everyone.
+Motion detection works: it has been used in a real office room with people walking through it, and it detected them. But those tests were informal, so **there's no measured detection rate or false-alarm rate yet** — this is stated openly at the top of the README. You can measure your own setup with [measuring-your-setup.md](measuring-your-setup.md), and sharing your numbers helps everyone.
 
 The zone on the map is approximate: roughly metre-scale, shown with an uncertainty ring.
 
