@@ -1,0 +1,25 @@
+name: "💡 Idea or feature request"
+description: Suggest an improvement.
+labels: ["idea"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the idea! Before suggesting something that changes what the system detects, please glance at [limitations.md](https://github.com/mkalantary/ghost-vision/blob/main/docs/limitations.md) — some abilities (like counting people or showing images) aren't possible with this kind of signal.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+    validations:
+      required: true
+  - type: textarea
+    id: measure
+    attributes:
+      label: How could we tell if it works?
+      description: Optional — but ideas that come with a way to measure them move fastest.

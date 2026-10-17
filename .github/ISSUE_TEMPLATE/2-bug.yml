@@ -1,0 +1,57 @@
+name: "🐞 Bug report"
+description: Something is broken or behaves wrongly.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting this! The more precise the steps, the faster it can be fixed.
+        🔒 **Never paste your WiFi password, your full `sdkconfig`, or your boards' MAC addresses.**
+        Found a **security** problem? Please don't post it here — see [SECURITY.md](https://github.com/mkalantary/ghost-vision/blob/main/SECURITY.md).
+  - type: dropdown
+    id: part
+    attributes:
+      label: Which part?
+      options:
+        - Console (PC program)
+        - Firmware (boards)
+        - Launchers
+        - Documentation
+        - Not sure
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Mode
+      options:
+        - Simulation (no hardware)
+        - Real boards
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Start the console with run_simulation.bat
+        2. Go to ROOM PLANNER
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected, and what happened instead
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Error message or output
+      render: text
+  - type: input
+    id: system
+    attributes:
+      label: Your setup
+      description: Operating system, Python version, ESP-IDF version, board model.

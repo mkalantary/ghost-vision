@@ -1,0 +1,7 @@
+Ghost-Vision
+Copyright 2026 M. Kalantary
+
+This product includes software derived from Espressif's esp-csi
+example "csi_recv_router" (https://github.com/espressif/esp-csi),
+Copyright 2021-2026 Espressif Systems (Shanghai) CO LTD,
+licensed under the Apache License, Version 2.0.

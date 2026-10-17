@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use Ghost-Vision in research, please cite it as below."
+title: "Ghost-Vision: camera-free motion and presence detection using WiFi Channel State Information on ESP32-S3"
+type: software
+authors:
+  - family-names: "Kalantary"
+    given-names: "M."
+version: "4.0"
+date-released: "2026-10-17"
+license: Apache-2.0
+repository-code: "https://github.com/mkalantary/ghost-vision"
+abstract: >-
+  An open-source system that detects human motion and presence from WiFi
+  Channel State Information (CSI), using four ESP32-S3 boards and one router
+  to form 10 radio paths (16 directed measurements). It includes node
+  firmware, a desktop console with calibration, multi-path corroborated
+  detection and approximate zone estimation, a simulation mode, and
+  documentation of the system's physical limits and failed hypotheses.
+keywords:
+  - WiFi sensing
+  - channel state information
+  - CSI
+  - ESP32-S3
+  - presence detection
+  - motion detection
+  - device-free sensing
+  - privacy

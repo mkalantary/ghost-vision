@@ -1,0 +1,7 @@
+# Keep line endings right for each platform, whoever edits the files.
+* text=auto
+# Batch files are stored with Windows line endings as-is, so even
+# GitHub's "Download ZIP" gives Windows exactly what it expects.
+*.bat -text
+*.sh  text eol=lf
+*.png binary

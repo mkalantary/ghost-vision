@@ -1,0 +1,34 @@
+name: "❓ Question / I'm stuck"
+description: Stuck on a step, or something isn't clear? Ask here — no question is too simple.
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for asking! Please check [Troubleshooting](https://github.com/mkalantary/ghost-vision/blob/main/docs/TROUBLESHOOTING.md) first — the answer may already be there.
+        🔒 **Never paste your WiFi password, or your full `sdkconfig` file.**
+  - type: input
+    id: step
+    attributes:
+      label: Where are you stuck?
+      description: For example, "Guide, Part 7" or "the console won't start".
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What did you do, and what happened?
+      description: What you expected to see, and what you saw instead.
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Error message or output
+      description: Paste the last 15 lines or so. It will be formatted automatically.
+      render: text
+  - type: input
+    id: system
+    attributes:
+      label: Your setup
+      description: For example, "Windows 11, Python 3.13, ESP-IDF 5.4.4, simulation mode".

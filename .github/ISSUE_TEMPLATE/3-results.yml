@@ -1,0 +1,43 @@
+name: "📊 Share your results"
+description: Measured your setup? Share the numbers — good or bad, they help everyone.
+labels: ["field-results"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you! Real-room measurements are the most valuable contribution this project can get.
+        How to measure: [measuring-your-setup.md](https://github.com/mkalantary/ghost-vision/blob/main/docs/measuring-your-setup.md)
+  - type: input
+    id: detection
+    attributes:
+      label: Detection rate
+      placeholder: "e.g. 47 of 50 walks (94%)"
+    validations:
+      required: true
+  - type: input
+    id: false_alarms
+    attributes:
+      label: False alarms
+      placeholder: "e.g. 1 in 24 hours, empty room"
+  - type: input
+    id: zone
+    attributes:
+      label: Zone accuracy (optional)
+      placeholder: "e.g. typical error 0.8 m over 6 points"
+  - type: textarea
+    id: room
+    attributes:
+      label: The room
+      description: Size, wall types (drywall, brick, concrete…), large furniture, anything metal.
+    validations:
+      required: true
+  - type: textarea
+    id: placement
+    attributes:
+      label: Placement and hardware
+      description: Where the boards and router were, and their models. A sketch or screenshot of the room planner is great.
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything unusual?
+      description: Fans, pets, heaters, neighbouring WiFi networks, settings you changed.

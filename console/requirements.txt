@@ -1,0 +1,7 @@
+# Ghost-Vision console
+numpy
+pyserial
+PyQt5
+
+# Optional — only for the camera panel
+# opencv-python
